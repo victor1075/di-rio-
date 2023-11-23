@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Diário Virtual</title>
+    <style>
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #10b9ae;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            /* Define a transição para todas as propriedades, com duração de 0.3 segundos e ritmo ease-in-out */
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Define o estilo do botão quando o usuário passa o mouse sobre ele */
+        button:hover {
+            /* Muda a cor de fundo para um tom mais escuro */
+            background-color: #088b81;
+            /* Aumenta o tamanho do botão em 20% */
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="IMG-20230720-WA0075.jpg" alt="Imagem do Diário" class="diario-imagem">
+        <h1>nosso diario</h1>
+        <textarea id="diarioInput" placeholder="Digite seu texto aqui"></textarea>
+        <button onclick="salvarNoDiario()">Salvar</button>
+        <div id="diarioAnterior"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
